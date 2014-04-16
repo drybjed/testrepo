@@ -1,0 +1,14 @@
+---
+
+- hosts: example.com
+
+  roles:
+    - role: bird
+      bird_list: [ 'eth0', 'eth1' ]
+
+- hosts: second.com
+
+  roles:
+    - role: bird
+      bird_list: [ 'eth2', 'eth3' ]
+
